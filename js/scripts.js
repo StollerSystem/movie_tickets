@@ -26,5 +26,9 @@ function MovieSelection() {
 }
 
 // User Interface Logic ---------
-let movie1 = new Movie("Jurrassic Park",false,["Matinee","10:00pm"]);
-let movie2 = new Movie("Batman 7",true,["6:00pm","9:00pm"])
+let movie1 = new Movie("Jurrassic Parks N Rec",false,["Matinee","10:00pm"]);
+let movie2 = new Movie("Batman 7",true,["6:00pm","9:00pm"]);
+let movie3 = new Movie("Adventures in Fantasyland",false,["11:00am", "Matinee"]);
+let movie4 = new Movie("Home Alone Stikes Back",true,["7:00pm"])
+
+MovieSelection.list.push(movie1,movie2,movie3,movie4)
