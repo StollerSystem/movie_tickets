@@ -5,9 +5,45 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Movie Tickets!</title>
 </head>
 <body>
+  <div class="container">
+    <form class ="form-one">
+      <div>
+        <label>Select your age:</label>
+        <select class="form-control" id="movies">
+          <option>Child</option>
+          <option>Adult</option>
+          <option>Senior</option>      
+        </select>    
+      </div>
+      <div>
+        <label>Select a movie below:</label>
+        <select class="form-control" id="movies">  
+          <ul>
+            <li><option>Movie1</option></li>
+            <li><option>Movie2</option></li>
+            <li><option>Movie3</option></li>
+            <li><option>Movie4</option></li>
+          </ul>         
+        </select>    
+      </div>
+      <div>
+        <label>Select a time:</label>
+        <select class="form-control" id="movies">
+          <option>Matinee</option>
+          <option>6:00pm</option>
+          <option>9:00pm</option>
+          <option>10:00pm</option>
+        </select>    
+      </div>
+      <button type="submit" class="btn">Get Ticket Price!</button>
+    </form>    
+    <div id="ticketPrice">
+    </div>
+  </div>
+  
   
 </body>
-</html>
+</html>`
