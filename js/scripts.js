@@ -45,7 +45,7 @@ function MovieSelection() {
 let movieSelection = new MovieSelection();
 let movie1 = new Movie("Jurrassic Parks N Rec",false,["Matinee","10:00pm"]);
 let movie2 = new Movie("Batman 7",true,["6:00pm","9:00pm"]);
-let movie3 = new Movie("Adventures in Fantasyland",false,["11:00am", "Matinee"]);
+let movie3 = new Movie("Adventures in Fantasyland",false,["<li>" + "11:00am", "Matinee" + "</li>"]);
 let movie4 = new Movie("Home Alone Stikes Back",true,["7:00pm"])
 movieSelection.list.push(movie1, movie2, movie3, movie4);
 
@@ -63,7 +63,8 @@ $(document).ready(function() {
     $("#movies").val()
     movieSelection.list.forEach(function(movie) {
       if (movie.title === $("#movies").val()) {
-        // console.log(movie.times)
+        $("#times").append("<option>" + movie.times + "</option>")
+        console.log(movie.times)
       }
     });
   })
